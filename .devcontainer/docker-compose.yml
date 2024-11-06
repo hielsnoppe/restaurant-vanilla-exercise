@@ -1,0 +1,30 @@
+version: '3.8'
+services:
+  devcontainer:
+    image: mcr.microsoft.com/devcontainers/base:ubuntu
+    volumes:
+      - ../..:/workspaces:cached
+    network_mode: service:apache
+    command: sleep infinity
+
+  apache:
+    image: php:7.2-apache
+    restart: unless-stopped
+    volumes:
+      - www-data:/var/www/html:rw
+    ports:
+      - 8000:80
+
+#   db:
+#     image: postgres:latest
+#     restart: unless-stopped
+#     volumes:
+#       - postgres-data:/var/lib/postgresql/data
+#     environment:
+#       POSTGRES_PASSWORD: postgres
+#       POSTGRES_USER: postgres
+#       POSTGRES_DB: postgres
+
+volumes:
+  www-data: ../src
+#   postgres-data:

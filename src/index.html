@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Restaurant</h1>
+
+    <h2>Menü</h2>
+    <dl id="menu"></dl>
+    
+    <h2>Bestellung</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Menge</th>
+                <th>Preis</th>
+                <th>Aktionen</th>
+            </tr>
+        </thead>
+        <tbody id="order-items"></tbody>
+        <tfoot>
+            <tr>
+                <td>Summe</td>
+                <td>Gesamtzahl</td>
+                <td>Gesamtpreis</td>
+                <td>
+                    <button id="submit">Bestellen</button>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

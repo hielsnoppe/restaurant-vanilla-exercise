@@ -1,0 +1,71 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Restaurant",
+    "collectionId": "00d8ebf1-b4a8-44f9-ab93-29bdb63b0d00",
+    "dateExported": "2024-11-06T14:43:00.782Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "89ac106a-8ad7-48c3-b8de-ca4834591452",
+            "colId": "00d8ebf1-b4a8-44f9-ab93-29bdb63b0d00",
+            "containerId": "",
+            "name": "View menu",
+            "url": "http://localhost:80/api/menu.php",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-11-06T14:41:22.272Z",
+            "modified": "2024-11-06T14:41:22.272Z",
+            "headers": []
+        },
+        {
+            "_id": "a01646f9-fec1-4c72-8919-2693e80f34c5",
+            "colId": "00d8ebf1-b4a8-44f9-ab93-29bdb63b0d00",
+            "containerId": "",
+            "name": "Create order",
+            "url": "http://localhost:80/api/orders.php",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-11-06T14:41:29.932Z",
+            "modified": "2024-11-06T14:41:29.932Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"items\": [\n    { \"menu_item_id\": 1, \"quantity\": 1 }\n  ]\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "a1a715b9-6e1a-4df7-9d6b-a3dd38f43f9a",
+            "colId": "00d8ebf1-b4a8-44f9-ab93-29bdb63b0d00",
+            "containerId": "",
+            "name": "List orders",
+            "url": "http://localhost:80/api/orders.php",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-11-06T14:41:42.895Z",
+            "modified": "2024-11-06T14:41:42.895Z",
+            "headers": []
+        },
+        {
+            "_id": "f8cc6c56-7729-461b-aeec-f6fdcf4a04d3",
+            "colId": "00d8ebf1-b4a8-44f9-ab93-29bdb63b0d00",
+            "containerId": "",
+            "name": "View order",
+            "url": "http://localhost:80/api/orders.php?id=1",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-11-06T14:41:50.507Z",
+            "modified": "2024-11-06T14:41:50.507Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "1",
+                    "isPath": false
+                }
+            ]
+        }
+    ],
+    "ref": "uO4ruvmiszwXxoORJ7JY2pKm0jOlTuqVw1ftZ4uLz_DQcy_gzc5jFZkIOMj6AzzgPFaTq9mP9xrr7NRY3M94Vw"
+}
