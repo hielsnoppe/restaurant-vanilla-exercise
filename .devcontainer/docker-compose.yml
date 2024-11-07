@@ -11,7 +11,7 @@ services:
     image: php:7.2-apache
     restart: unless-stopped
     volumes:
-      - www-data:/var/www/html:rw
+      - ../src:/var/www/html:rw
     ports:
       - 8000:80
 
@@ -25,6 +25,5 @@ services:
 #       POSTGRES_USER: postgres
 #       POSTGRES_DB: postgres
 
-volumes:
-  www-data: ../src
+# volumes:
 #   postgres-data:
