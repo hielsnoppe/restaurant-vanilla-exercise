@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', async (event) => {
-    
-    const response = await fetch('http://localhost:8000/api/menu.php');
 
     class App {
 
@@ -157,6 +155,8 @@ document.addEventListener('DOMContentLoaded', async (event) => {
         }
     }
 
+    const response = await fetch('http://localhost:8000/api/menu.php');
+    
     const app = new App({
         menu: await response.json(),
         order: { items: [] }
